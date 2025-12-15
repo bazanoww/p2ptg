@@ -1,0 +1,17 @@
+meta:
+  environment: nodejs
+  toolchain:
+    name: node
+    version: 18  # укажите версию Node.js, которую используете
+
+
+build:
+  # Команды для установки зависимостей
+  commands:
+    - npm install
+
+run:
+  # Команда для запуска бота
+  command: node app.js
+  # Порт, на котором слушает сервер
+  port: 8080
